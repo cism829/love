@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        block scripts
+            script(src="/script.js" defer)
+        block styles 
+            link(rel="stylesheet" href="/style.css" type="text/css")
+
+        title HEY BABE 
+    body 
+        block navbar 
+            img.open(src="images/menu.svg" alt="menu icon")
+            div#mySidenav.sidenav 
+                a.closebtn(href="#") &times;
+                a(href="#") About 
+                a(href="#") Services
+                a(href="#") Clietns
+                a(href="#") Contact
+        block content 
